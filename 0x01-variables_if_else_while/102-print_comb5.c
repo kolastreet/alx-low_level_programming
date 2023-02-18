@@ -11,6 +11,7 @@ int main(void)
 	int x;
 	int y;
 	int k;
+	int n = 0;
 
 	for (y = 48; y < 58; y++)
 	{
@@ -19,15 +20,13 @@ int main(void)
 	for (x = 48; x < 58; x++)
 	{
 	for (i = 48; i < 58; i++)
-	{
-		if (i != 48 && x != 48 && y != 48 && k != 48)
-		{
-		putchar(y);
-		putchar(k);
+	{	
+		putchar(y + n);
+		putchar(k + n);
 		putchar(' ');
-		putchar(x);
-		putchar(i);
-		}
+		putchar(x + n);
+		putchar(i + n);
+	
 		if (i == 57 && x == 57 && y == 57 && k == 57)
 	       { putchar('\n');
 	       }
