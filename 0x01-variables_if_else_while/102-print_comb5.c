@@ -19,8 +19,7 @@ int main(void)
 	for (x = 48; x < 58; x++)
 	{
 	for (i = 48; i < 58; i++)
-	{	
-		if (
+	{
 		putchar(y + '0');
 		putchar(k + '0');
 		putchar(' ');
