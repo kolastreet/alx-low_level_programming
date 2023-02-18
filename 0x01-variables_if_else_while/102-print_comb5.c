@@ -25,7 +25,7 @@ int main(void)
 		putchar(' ');
 		putchar(x);
 		putchar(i);
-	       if (i == 57 && x == 57)
+	       if (i == 57 && x == 57 && y == 57 && k == 57)
 	       { putchar('\n');
 	       }
 	       else 
