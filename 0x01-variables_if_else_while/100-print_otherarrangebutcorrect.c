@@ -14,10 +14,10 @@ int main(void)
 	{
 	for (i = 48; i < 58; i++)
 	{
-		if (x != i && x < i)
+		if (x != i && x > i)
 		{
-		putchar(x);
 		putchar(i);
+		putchar(x);
 		if (i == 56 && x == 57)
 		{
 			putchar('\n');
@@ -26,9 +26,7 @@ int main(void)
 		{
 			putchar(',');
 			putchar(' ');
-		}
-		}
-	}
-	}
+		}}
+	}}
 	return (0);
 }
