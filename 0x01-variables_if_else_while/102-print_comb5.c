@@ -1,44 +1,41 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers between 00 to 99.
+ * main - Prints numbers from 0 to 9 nested
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int i, e, g, h;
+	int i;
+	int x;
+	int y;
+	int k;
 
-i = e = g = h = 48;
-while (h < 58)
-{
-	g = 48;
-	while (g < 58)
+	for (y = 48; y < 58; y++)
 	{
-		e = 48;
-		while (e < 58)
-		{
-			i = 48;
-			while (i < 58)
-			{
-					putchar(h);
-					putchar(g);
-					putchar(' ');
-					putchar(e);
-					putchar(i);
-					if (h == 57 && g == 56 && e == 57 && i == 57)
-						break;
-					putchar(',');
-					putchar(' ');
-				
-				i++;
-			}
-			e++;
-		}
-		g++;
-	}
-	h++;
-}
-putchar('\n');
-return (0);
+	for (k = 48; k < 58; k++)
+	{
+	for (x = 48; x < 58; x++)
+	{
+	for (i = 48; i < 58; i++)
+	{	
+		if (
+		putchar(y + '0');
+		putchar(k + '0');
+		putchar(' ');
+		putchar(x + '0');
+		putchar(i + '0');
+	
+		if (i == 57 && x == 57 && y == 57 && k == 57)
+	       { putchar('\n');
+	       }
+	       else 
+	       {       
+			putchar(',');
+			putchar(' ');
+	       }
+	}}
+	}}
+	return (0);
 }
