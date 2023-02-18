@@ -20,12 +20,15 @@ int main(void)
 	{
 	for (i = 48; i < 58; i++)
 	{
+		if (i != 48 && x != 48 && y != 48 && k != 48)
+		{
 		putchar(y);
 		putchar(k);
 		putchar(' ');
 		putchar(x);
 		putchar(i);
-	       if (i == 57 && x == 57 && y == 57 && k == 57)
+		}
+		if (i == 57 && x == 57 && y == 57 && k == 57)
 	       { putchar('\n');
 	       }
 	       else 
