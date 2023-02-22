@@ -1,43 +1,43 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
- * print_times_table - Prints the n times 
- * for numbers from 0 to 15 table
+ * print_times_table - Prints the n times table
+ *
  * @n: number times table (0 < n <= 15)
  *
  * Return: no return
  */
 void print_times_table(int n)
 {
-	int x, y, multi;
+	int a, b, op;
 
 	if (n >= 0 && n <= 15)
 	{
-		for (x = 0; x <= n; x++)
+		for (a = 0; a <= n; a++)
 		{
 			_putchar(48);
-			for (y = 1; y <= n; y++)
+			for (b = 1; b <= n; b++)
 			{
-				multi = x * y;
+				op = a * b;
 				_putchar(44);
 				_putchar(32);
-				if (multi <= 9)
+				if (op <= 9)
 				{
 					_putchar(32);
 					_putchar(32);
-					_putchar(multi + 48);
+					_putchar(op + 48);
 				}
-				else if (multi <= 99)
+				else if (op <= 99)
 				{
 					_putchar(32);
-					_putchar((multi / 10) + 48);
-					_putchar((multi % 10) + 48);
+					_putchar((op / 10) + 48);
+					_putchar((op % 10) + 48);
 				}
 				else
 				{
-					_putchar(((multi / 100) % 10) + 48);
-					_putchar(((multi / 10) % 10) + 48);
-					_putchar((multi % 10) + 48);
+					_putchar(((op / 100) % 10) + 48);
+					_putchar(((op / 10) % 10) + 48);
+					_putchar((op % 10) + 48);
 				}
 			}
 			_putchar('\n');
