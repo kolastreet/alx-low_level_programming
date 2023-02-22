@@ -8,15 +8,15 @@
 int main(void)
 {
 	int count;
-	int x, y, fsum;
+	long int x, y, fsum;
 
 	x = 1;
 	y = 2;
-	printf("%d, %d", x, y);
+	printf("%ld, %ld", x, y);
 	for (count = 0; count < 48; count++)
 	{
 		fsum = x + y;
-		printf(", %d", fsum);
+		printf(", %ld", fsum);
 		x = y;
 		y = fsum;
 	}
