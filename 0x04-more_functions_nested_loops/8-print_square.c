@@ -7,15 +7,15 @@
  */
 void print_square(int size)
 {
-	int i, l;
+	int loop, l;
 
-	for (i = 0; i < size; i++)
+	for (loop = 0; loop < size; loop++)
 	{
 		for (l = 0; l < size; l++)
 		{
 			_putchar(35);
 		}
-		if (i != size - 1)
+		if (loop != size - 1)
 			_putchar('\n');
 	}
 	_putchar('\n');
