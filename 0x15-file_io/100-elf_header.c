@@ -7,8 +7,8 @@
 #include <elf.h>
 
 /**
- * print_addr - print address
- * @ptr: another hss.
+ * print_addr - print current address
+ * @ptr: magic.
  * Return: no return.
  */
 void print_addr(char *ptr)
@@ -52,7 +52,8 @@ void print_addr(char *ptr)
 }
 
 /**
- * print_type - print data type
+ * print_type - print current type
+ * @ptr: magic.
  * Return: no return.
  */
 void print_type(char *ptr)
@@ -81,6 +82,7 @@ void print_type(char *ptr)
 
 /**
  * print_osabi - prints osabi
+ * @ptr: magic.
  * Return: no return.
  */
 void print_osabi(char *ptr)
@@ -102,7 +104,8 @@ void print_osabi(char *ptr)
 
 
 /**
- * print_version - prints version
+ * print_version - print current  version
+ * @ptr: magic.
  * Return: no return.
  */
 void print_version(char *ptr)
@@ -117,7 +120,8 @@ void print_version(char *ptr)
 	printf("\n");
 }
 /**
- * print_data - prints data
+ * print_data - print filr data
+ * @ptr: magic.
  * Return: no return.
  */
 void print_data(char *ptr)
@@ -132,7 +136,8 @@ void print_data(char *ptr)
 		printf(", big endian\n");
 }
 /**
- * print_magic - prints magical info.
+ * print_magic - print magic filedata.
+ * @ptr: magic.
  * Return: no return.
  */
 void print_magic(char *ptr)
@@ -150,6 +155,7 @@ void print_magic(char *ptr)
 
 /**
  * check_sys - check the version system.
+ * @ptr: magic.
  * Return: no return.
  */
 void check_sys(char *ptr)
@@ -177,6 +183,7 @@ void check_sys(char *ptr)
 
 /**
  * check_elf - check if an elf file.
+ * @ptr: magic.
  * Return: 1 if an elf file. 0 if not.
  */
 int check_elf(char *ptr)
@@ -193,7 +200,7 @@ int check_elf(char *ptr)
 }
 
 /**
- * main - check the code.
+ * main - check the codes.
  * @argc: number of arguments.
  * @argv: arguments vector.
  * Return: Always 0.
